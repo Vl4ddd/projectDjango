@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <title>Страница с вкладками</title>
-    <link rel="stylesheet" type="text/css" href=" {% static 'style.css' %} ">
+    #<link rel="stylesheet" type="text/css" href=" {% static 'style.css' %} ">
+    <style>.tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+  
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+  
+    .tab button:hover {
+      background-color: #ddd;
+    }
+  
+    .tab button.active {
+      background-color: #ccc;
+    }
+  
+    /* Стили для содержимого вкладок */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }</style>
   </head>
   <body>
 
@@ -28,7 +59,22 @@
       <h3>Содержимое третьей вкладки</h3>
       <p>Текст третьей вкладки.</p>
     </div>
-    <script src="switch.js"></script>
+    <script>
+      function openTab(evt, tabName) {
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+    
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+    
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
     
 
   </body>
