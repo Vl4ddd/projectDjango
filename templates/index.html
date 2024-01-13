@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Страница с вкладками</title>
+    <link rel="stylesheet" type="text/css" href=" {% static 'style.css' %} ">
+  </head>
+  <body>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Tab1')">Вкладка 1</button>
+      <button class="tablinks" onclick="openTab(event, 'Tab2')">Вкладка 2</button>
+      <button class="tablinks" onclick="openTab(event, 'Tab3')">Вкладка 3</button>
+    </div>
+
+
+    <div id="Tab1" class="tabcontent">
+      <h3>Содержимое первой вкладки</h3>
+      <p>Текст первой вкладки.</p>
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+      <h3>Содержимое второй вкладки</h3>
+      <p>Текст второй вкладки.</p>
+    </div>
+
+    <div id="Tab3" class="tabcontent">
+      <h3>Содержимое третьей вкладки</h3>
+      <p>Текст третьей вкладки.</p>
+    </div>
+    <script src="switch.js"></script>
+    
+
+  </body>
+</html>
