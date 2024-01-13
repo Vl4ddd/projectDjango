@@ -1,0 +1,63 @@
+.tab {
+    display: flex;
+
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    width: auto;
+
+  }
+
+  .tablinks {
+    width: 1000px
+  }
+
+  header {
+    text-align: right;
+    /* Выравнивание внутреннего контента по левому краю */
+    width: 98.7%;
+    /* Ширина блока и общая ширина*/
+    height: 90px;
+    /* Высота блока */
+    margin-right: auto;
+    /* Авто-отступ справа */
+    margin-left: auto;
+    /* Авто-отступ слева */
+    padding: 10px;
+    /* Внутренние поля вокруг содержимого */
+    background: #7777df;
+    /* Цвет фона */
+  }
+
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Стили для содержимого вкладок */
+  .tabcontent {
+    margin-top: none;
+    text-align: center;
+
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+
+  }
+
+  li {
+    margin: 10px;
+    text-align: left;
+  }

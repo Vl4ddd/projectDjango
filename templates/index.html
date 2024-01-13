@@ -1,74 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8">
   <title>Страница с вкладками</title>
-  <style>
-    .tab {
-      display: flex;
-
-      border: 1px solid black;
-      padding: 10px;
-      cursor: pointer;
-      width: auto;
-
-    }
-
-    .tablinks {
-      width: 1000px
-    }
-
-    header {
-      text-align: right;
-      /* Выравнивание внутреннего контента по левому краю */
-      width: 98.7%;
-      /* Ширина блока и общая ширина*/
-      height: 90px;
-      /* Высота блока */
-      margin-right: auto;
-      /* Авто-отступ справа */
-      margin-left: auto;
-      /* Авто-отступ слева */
-      padding: 10px;
-      /* Внутренние поля вокруг содержимого */
-      background: #7777df;
-      /* Цвет фона */
-    }
-
-    .tab button {
-      background-color: inherit;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      font-size: 17px;
-    }
-
-    .tab button:hover {
-      background-color: #ddd;
-    }
-
-    .tab button.active {
-      background-color: #ccc;
-    }
-
-    /* Стили для содержимого вкладок */
-    .tabcontent {
-      margin-top: none;
-      text-align: center;
-
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-
-    }
-
-    li {
-      margin: 10px;
-      text-align: left;
-    }
-  </style>
+  <link rel="stylesheet" href=" {% static 'django_application/css/style.css' %}">
 </head>
 
 <body>
@@ -150,22 +87,8 @@
     <h3>Содержимое третьей вкладки</h3>
     <p>Текст третьей вкладки.</p>
   </div>
-  <script>
-    function openTab(evt, tabName) {
-      var tabcontent = document.getElementsByClassName("tabcontent");
-      for (var i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-
-      var tablinks = document.getElementsByClassName("tablinks");
-      for (var i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
+  
+  <script src="{% static 'django_application/js/switch.js' %}"></script>
 
 
 </body>
