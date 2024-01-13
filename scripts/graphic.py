@@ -117,7 +117,7 @@ def create_plot():
     sub[1, 1].pie(vals, labels=labels, textprops={'fontsize': 6})
     sub[1, 1].set_title('Доля вакансий по городам')
 
-    return sub
+    plt.show()
 
 
 vacancies = pd.read_csv('vacancies.csv',
