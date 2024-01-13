@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Страница с вкладками</title>
-    <style>.tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
+
+<head>
+  <meta charset="UTF-8">
+  <title>Страница с вкладками</title>
+  <style>
+    .tab {
+      display: flex;
+
+      border: 1px solid black;
+      padding: 10px;
+      cursor: pointer;
+      width: auto;
+
     }
-  
+
+    .tablinks {
+      width: 1000px
+    }
+
+    header {
+      text-align: right;
+      /* Выравнивание внутреннего контента по левому краю */
+      width: 98.7%;
+      /* Ширина блока и общая ширина*/
+      height: 90px;
+      /* Высота блока */
+      margin-right: auto;
+      /* Авто-отступ справа */
+      margin-left: auto;
+      /* Авто-отступ слева */
+      padding: 10px;
+      /* Внутренние поля вокруг содержимого */
+      background: #7777df;
+      /* Цвет фона */
+    }
+
     .tab button {
       background-color: inherit;
       border: none;
@@ -18,63 +45,129 @@
       transition: 0.3s;
       font-size: 17px;
     }
-  
+
     .tab button:hover {
       background-color: #ddd;
     }
-  
+
     .tab button.active {
       background-color: #ccc;
     }
-  
+
     /* Стили для содержимого вкладок */
     .tabcontent {
-      display: none;
+      margin-top: none;
+      text-align: center;
+
       padding: 6px 12px;
       border: 1px solid #ccc;
-      border-top: none;
-    }</style>
-  </head>
-  <body>
 
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Tab1')">Вкладка 1</button>
-      <button class="tablinks" onclick="openTab(event, 'Tab2')">Вкладка 2</button>
-      <button class="tablinks" onclick="openTab(event, 'Tab3')">Вкладка 3</button>
-    </div>
+    }
+
+    li {
+      margin: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>ItMate Владислав Останин РИ-220931</header>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Tab1')">Главная страница</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">Востребованность</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')">География</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab4')">Навыки</button>
+  </div>
+
+  <div id="Tab1" class="tabcontent">
+    <h3>Python-разработчик</h3>
+    <p align=left>Python-разработчик — это специалист, который использует язык программирования Python для разработки
+      и обслуживания компьютерных программ. Работа python-разработчика включает в себя создание программ, модулей,
+      инструментов, веб-сайтов, веб-сервисов и других приложений, которые могут выполняться на компьютере, сервере или в
+      облаке.<br><br>
+
+      Ключевые навыки python-разработчика:
+    <ul>
+      <li>Основы языка Python</li>
+      <li>ООП-парадигмы (объектно-ориентированное программирование)</li>
+      <li>Понимание основных алгоритмов и структур данных</li>
+      <li>Работа с реляционными базами данных (MySQL, PostgreSQL, SQLite) и нереляционными (MongoDB)</li>
+      <li>Использование популярных инструментов для контроля версий (Git)</li>
+      <li>Знание платформы GitHub и GitLab</li>
+      <li>Знание модульных тестов и библиотеки unittest</li>
+      <li>Знание основ сетевого программирования (TCP/IP, HTTP, WebSocket)</li>
+      <li>Работа с асинхронными технологиями (asyncio, gevent)</li>
+      <li>Использование платформы Django для создания веб-приложений</li>
+      <li>Использование популярных инструментов для создания и анализа данных (pandas, numpy, scikit-learn)</li>
+      <li>Использование популярных инструментов для создания и анализа данных (pandas, numpy, scikit-learn)</li>
+      <li>Использование виртуализации и оркестрации контейнеров (Docker, Kubernetes)</li>
+      <li>Использование технологий бессерверных вычислений (AWS Lambda, Google Cloud Functions)</li>
+      <li>Работа с большими данными (Apache Hadoop, Apache Spark)</li>
+      <li>Использование технологий машинного обучения и искусственного интеллекта (TensorFlow, PyTorch, Keras)</li>
+    </ul>
 
 
-    <div id="Tab1" class="tabcontent">
-      <h3>Содержимое первой вкладки</h3>
-      <p>Текст первой вкладки.</p>
-    </div>
+    <p align=left>Технологический стек python-разработчика включает:</p>
+    <ul>
+      <li>Python 3.x (язык программирования)</li>
+      <li>pip (система управления пакетами)</li>
+      <li>venv (виртуальное окружение Python)</li>
+      <li>Django, Flask (фреймворки для создания веб-приложений)</li>
+      <li>NumPy, pandas (библиотеки для работы с данными)</li>
+      <li>scikit-learn, TensorFlow, PyTorch (библиотеки для машинного обучения и искусственного интеллекта)</li>
+      <li>Git, GitHub, GitLab (системы контроля версий и хранения кода)</li>
+      <li>Docker, Kubernetes (технологии для создания и управления контейнерами)</li>
+      <li>AWS, Google Cloud Platform (ориентированные на облако сервисы)</li>
+    </ul>
+    <p align=left> Сфера применения python-разработчика:</p>
 
-    <div id="Tab2" class="tabcontent">
-      <h3>Содержимое второй вкладки</h3>
-      <p>Текст второй вкладки.</p>
-    </div>
+    <ul>
+      <li>Разработка программ и приложений</li>
+      <li>Анализ данных и создание моделей машинного обучения</li>
+      <li>Создание и управление базами данных</li>
+      <li>Разработка и обслуживание веб-сайтов и веб-сервисов</li>
+      <li>Создание и управление облачными ресурсами</li>
+      <li>Работа с Интернетом вещей и мобильными приложениями</li>
+      <li>Участие в проектах по автоматизации процессов и управлению данными</li>
+    </ul>
+    Python-разработчик может работать как индивидуально, так и в составе команды. Примером такой команды может
+    служить "Ковенска и Ко", которая разрабатывает продукты на базе технологии Python и Machine Learning.
+    </p>
+  </div>
 
-    <div id="Tab3" class="tabcontent">
-      <h3>Содержимое третьей вкладки</h3>
-      <p>Текст третьей вкладки.</p>
-    </div>
-    <script>
-      function openTab(evt, tabName) {
-        var tabcontent = document.getElementsByClassName("tabcontent");
-        for (var i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-    
-        var tablinks = document.getElementsByClassName("tablinks");
-        for (var i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-    
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
+  <div id="Tab2" class="tabcontent">
+    <h3>2</h3>
+    <p>Текст первой вкладки.</p>
+  </div>
+
+  <div id="Tab3" class="tabcontent">
+    <h3>Содержимое второй вкладки</h3>
+    <p>Текст второй вкладки.</p>
+  </div>
+
+  <div id="Tab4" class="tabcontent">
+    <h3>Содержимое третьей вкладки</h3>
+    <p>Текст третьей вкладки.</p>
+  </div>
+  <script>
+    function openTab(evt, tabName) {
+      var tabcontent = document.getElementsByClassName("tabcontent");
+      for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
       }
-    </script>
-    
 
-  </body>
+      var tablinks = document.getElementsByClassName("tablinks");
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+
+</body>
+
 </html>
