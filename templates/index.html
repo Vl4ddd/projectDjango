@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <header>ItMate Владислав Останин РИ-220931</header>
+  <header> <img src="{% static 'django_application/img/logo-no-background.png' %}" width="18%">
+  </header>
   <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Tab1')">Главная страница</button>
     <button class="tablinks" onclick="openTab(event, 'Tab2')">Востребованность</button>
@@ -74,8 +75,229 @@
   </div>
 
   <div id="Tab2" class="tabcontent">
-    <h3>2</h3>
-    <p>Текст первой вкладки.</p>
+    <h3>Востребованность</h3>
+    <div class="table-title">
+      <h3>Динамика зарплат по годам</h3>
+    </div>
+    <table border="1" class="dataframe table-fill">
+      <thead>
+        <tr style="text-align: left;">
+          <th></th>
+          <th class="text-left">Год</th>
+          <th class="text-left">Средняя ЗП</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <th>0</th>
+          <td>2003</td>
+          <td>41304.950419</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>2004</td>
+          <td>42967.521861</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>2005</td>
+          <td>75516.589932</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>2006</td>
+          <td>41317.917546</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>2007</td>
+          <td>44449.491733</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>2008</td>
+          <td>48411.221445</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>2009</td>
+          <td>44811.747280</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>2010</td>
+          <td>44657.898453</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>2011</td>
+          <td>46448.523797</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>2012</td>
+          <td>47969.245101</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>2013</td>
+          <td>53542.000047</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>2014</td>
+          <td>49077.039175</td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>2015</td>
+          <td>51734.739138</td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>2016</td>
+          <td>61305.709055</td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>2017</td>
+          <td>60364.014008</td>
+        </tr>
+        <tr>
+          <th>15</th>
+          <td>2018</td>
+          <td>65581.981107</td>
+        </tr>
+        <tr>
+          <th>16</th>
+          <td>2019</td>
+          <td>69938.333291</td>
+        </tr>
+        <tr>
+          <th>17</th>
+          <td>2020</td>
+          <td>73111.316516</td>
+        </tr>
+        <tr>
+          <th>18</th>
+          <td>2021</td>
+          <td>105412.510866</td>
+        </tr>
+        <tr>
+          <th>19</th>
+          <td>2022</td>
+          <td>92382.788524</td>
+        </tr>
+        <tr>
+          <th>20</th>
+          <td>2023</td>
+          <td>94554.205480</td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="{% static 'django_application/img/dynamic_salary_all.png' %}" class='dynamic1'>
+
+
+    <div class="table-title">
+      <h3>Динамика зарплат по годам для<br> профессии Python-разработчик</h3>
+    </div>
+    <table border="1" class="dataframe table-fill">
+      <thead>
+        <tr style="text-align: left;">
+          <th></th>
+          <th>Год</th>
+          <th>Средняя ЗП</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <th>0</th>
+          <td>2006</td>
+          <td>34009.003333</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>2008</td>
+          <td>47076.900000</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>2009</td>
+          <td>65714.285714</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>2010</td>
+          <td>53727.272727</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>2011</td>
+          <td>70000.000000</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>2012</td>
+          <td>64999.941176</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>2013</td>
+          <td>76950.171512</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>2014</td>
+          <td>69134.615385</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>2015</td>
+          <td>84768.710000</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>2016</td>
+          <td>90927.603542</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>2017</td>
+          <td>105367.943889</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>2018</td>
+          <td>121804.889583</td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>2019</td>
+          <td>122343.619444</td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>2020</td>
+          <td>108711.880444</td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>2021</td>
+          <td>157090.448014</td>
+        </tr>
+        <tr>
+          <th>15</th>
+          <td>2022</td>
+          <td>209574.927720</td>
+        </tr>
+        <tr>
+          <th>16</th>
+          <td>2023</td>
+          <td>147605.468966</td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="{% static 'django_application/img/dynamic_salary_vac.png' %}" class='dynamic2'>
   </div>
 
   <div id="Tab3" class="tabcontent">
@@ -87,10 +309,12 @@
     <h3>Содержимое третьей вкладки</h3>
     <p>Текст третьей вкладки.</p>
   </div>
-  
+
   <script src="{% static 'django_application/js/switch.js' %}"></script>
 
-
+  <footer>
+    <p>Владислав Останин РИ-220931</p>
+  </footer>
 </body>
 
 </html>
