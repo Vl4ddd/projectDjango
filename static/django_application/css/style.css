@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
 
+
 .tab {
     display: flex;
 
@@ -86,6 +87,16 @@ li {
 .dynamic2{
     width: 55%;
     position:absolute;right: 10%;top:2300px;
+}
+
+.dynamic3{
+    width: 50%;
+    position:absolute;right: 10%;top:3900px;
+}
+
+.dynamic4{
+    width: 55%;
+    position:absolute;right: 10%;top:5900px;
 }
 
 .dataframe{
