@@ -309,7 +309,7 @@
         <tr style="text-align: right;">
           <th></th>
           <th>Год</th>
-          <th>Колличество вакансий</th>
+          <th>Количество вакансий</th>
         </tr>
       </thead>
       <tbody class="table-hover">
@@ -431,7 +431,7 @@
         <tr style="text-align: left;">
           <th></th>
           <th>Год</th>
-          <th>Колличество вакансий</th>
+          <th>Количество вакансий</th>
         </tr>
       </thead>
       <tbody class="table-hover">
@@ -528,7 +528,192 @@
 
   <div id="Tab3" class="tabcontent">
     <h3>География</h3>
-    
+
+    <div class="table-title">
+      <h3>Средняя зарплата по местности</h3>
+    </div>
+    <table border="1" class="dataframe table-fill">
+      <thead>
+        <tr style="text-align: left;">
+
+          <th></th>
+          <th>Местность</th>
+          <th>Средняя ЗП</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <th>1</th>
+          <td>Германия</td>
+          <td>381624.201833</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Кипр</td>
+          <td>254099.908066</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Тбилиси</td>
+          <td>228043.816415</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>Армения</td>
+          <td>220292.143633</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>США</td>
+          <td>183049.442435</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>Польша</td>
+          <td>179565.472818</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>Иннополис</td>
+          <td>108331.305827</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>Баку</td>
+          <td>94893.127728</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>Москва</td>
+          <td>91954.282882</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>Сочи</td>
+          <td>89844.786954</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>Киев</td>
+          <td>82469.539765</td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>Санкт-Петербург</td>
+          <td>78634.802488</td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>Фрязино</td>
+          <td>74229.560155</td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>Новосибирск</td>
+          <td>74185.543614</td>
+        </tr>
+        <tr>
+          <th>15</th>
+          <td>Астана</td>
+          <td>73923.005121</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p></p>
+    <img src="{% static 'django_application/img/geography_all_salary.png' %}" class='dynamic1'>
+    <img src="{% static 'django_application/img/pie_geography_all.png' %}" class='softdynamic1'>
+
+
+
+
+    <table border="1" class="dataframe table-fill">
+      <thead>
+        <tr style="text-align: left;">
+          <th></th>
+          <th>Местность</th>
+          <th>Коли</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <th>0</th>
+          <td>Москва</td>
+          <td>2108713</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>Санкт-Петербург</td>
+          <td>644114</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Минск</td>
+          <td>231330</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Новосибирск</td>
+          <td>151775</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>Киев</td>
+          <td>140490</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>Екатеринбург</td>
+          <td>138936</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>Нижний Новгород</td>
+          <td>132234</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>Алматы</td>
+          <td>126952</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>Казань</td>
+          <td>124811</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>Воронеж</td>
+          <td>105241</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>Краснодар</td>
+          <td>93283</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>Ростов-на-Дону</td>
+          <td>85762</td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>Самара</td>
+          <td>83108</td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>Пермь</td>
+          <td>64501</td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>Уфа</td>
+          <td>57764</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div id="Tab4" class="tabcontent">

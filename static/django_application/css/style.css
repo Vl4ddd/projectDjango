@@ -79,9 +79,17 @@ li {
     text-align: left;
 }
 
+
+
 .dynamic1{
     width: 50%;
     position:absolute;right: 10%;top:400px;
+}
+
+.softdynamic1{
+    width: 40%;
+    position:absolute;right: 10%;top:1100px;
+
 }
 
 .dynamic2{
