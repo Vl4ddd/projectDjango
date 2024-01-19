@@ -143,44 +143,89 @@ li {
 
 .skill2016{
     width: 60%;
-    position:absolute;right: 10%;top:2300px;
+    position:absolute;right: 10%;top:2400px;
 }
 
 .skill2017{
     width: 60%;
-    position:absolute;right: 10%;top:4100px;
+    position:absolute;right: 10%;top:4300px;
 }
 
 .skill2018{
     width: 60%;
-    position:absolute;right: 10%;top:5900px;
+    position:absolute;right: 10%;top:6200px;
 }
 
 .skill2019{
     width: 60%;
-    position:absolute;right: 10%;top:7700px;
+    position:absolute;right: 10%;top:8200px;
 }
 
 .skill2020{
     width: 60%;
-    position:absolute;right: 10%;top:9500px;
+    position:absolute;right: 10%;top:10000px;
 }
 
 .skill2021{
     width: 60%;
-    position:absolute;right: 10%;top:11300px;
+    position:absolute;right: 10%;top:11800px;
 }
 
 .skill2022{
     width: 60%;
-    position:absolute;right: 10%;top:13100px;
+    position:absolute;right: 10%;top:13700px;
 }
 
 .skill2023{
     width: 60%;
-    position:absolute;right: 10%;top:14900px;
+    position:absolute;right: 10%;top:15500px;
 }
 
+
+.skill_vac2015{
+    width: 60%;
+    position:absolute;right: 7%;top: 17500px;
+}
+
+.skill_vac2016{
+    width: 60%;
+    position:absolute;right: 7%;top:19500px;
+}
+
+.skill_vac2017{
+    width: 60%;
+    position:absolute;right: 7%;top:21500px;
+}
+
+.skill_vac2018{
+    width: 60%;
+    position:absolute;right: 7%;top:23300px;
+}
+
+.skill_vac2019{
+    width: 60%;
+    position:absolute;right: 7%;top:25200px;
+}
+
+.skill_vac2020{
+    width: 60%;
+    position:absolute;right: 7%;top:27100px;
+}
+
+.skill_vac2021{
+    width: 60%;
+    position:absolute;right: 7%;top:29000px;
+}
+
+.skill_vac2022{
+    width: 60%;
+    position:absolute;right: 7%;top:31000px;
+}
+
+.skill_vac2023{
+    width: 60%;
+    position:absolute;right: 7%;top:34000px;
+}
 
 
 h3{
