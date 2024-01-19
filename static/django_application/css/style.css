@@ -117,6 +117,16 @@ li {
     position:absolute;right: 10%;top:5900px;
 }
 
+.dynamic45{
+    width: 60%;
+    position:absolute;right: 10%;top:4800px;
+}
+
+.softdynamic2{
+    width: 45%;
+    position:absolute;right: 10%;top:5400px;
+}
+
 .dataframe{
     
     margin: 0%;
