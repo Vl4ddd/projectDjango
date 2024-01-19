@@ -134,6 +134,54 @@ li {
   
    
 }
+/*** Skills Styles **/
+
+.skill2015{
+    width: 60%;
+    position:absolute;right: 10%;top:500px;
+}
+
+.skill2016{
+    width: 60%;
+    position:absolute;right: 10%;top:2300px;
+}
+
+.skill2017{
+    width: 60%;
+    position:absolute;right: 10%;top:4100px;
+}
+
+.skill2018{
+    width: 60%;
+    position:absolute;right: 10%;top:5900px;
+}
+
+.skill2019{
+    width: 60%;
+    position:absolute;right: 10%;top:7700px;
+}
+
+.skill2020{
+    width: 60%;
+    position:absolute;right: 10%;top:9500px;
+}
+
+.skill2021{
+    width: 60%;
+    position:absolute;right: 10%;top:11300px;
+}
+
+.skill2022{
+    width: 60%;
+    position:absolute;right: 10%;top:13100px;
+}
+
+.skill2023{
+    width: 60%;
+    position:absolute;right: 10%;top:14900px;
+}
+
+
 
 h3{
     color: #6eb3e1;
