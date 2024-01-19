@@ -88,18 +88,28 @@ li {
 
 .softdynamic1{
     width: 40%;
-    position:absolute;right: 10%;top:1100px;
+    position:absolute;right: 10%;top:2600px;
 
 }
 
 .dynamic2{
     width: 55%;
-    position:absolute;right: 10%;top:2300px;
+    position:absolute;right: 10%;top:2400px;
+}
+
+.dynamic25{
+    width: 55%;
+    position:absolute;right: 10%;top:1900px;
 }
 
 .dynamic3{
     width: 50%;
     position:absolute;right: 10%;top:3900px;
+}
+
+.dynamic35{
+    width: 55%;
+    position:absolute;right: 10%;top:3300px;
 }
 
 .dynamic4{

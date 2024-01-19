@@ -424,7 +424,7 @@
 
 
     <div class="table-title">
-      <h3>Динамика количества вакансий по годам для професии Python-разработчик</h3>
+      <h3>Динамика количества вакансий по годам для профессии Python-разработчик</h3>
     </div>
     <table border="1" class="dataframe table-fill">
       <thead>
@@ -623,17 +623,19 @@
 
     <p></p>
     <img src="{% static 'django_application/img/geography_all_salary.png' %}" class='dynamic1'>
-    <img src="{% static 'django_application/img/pie_geography_all.png' %}" class='softdynamic1'>
+    
 
 
 
-
+    <div class="table-title">
+      <h3>Количество вакансий по местности</h3>
+    </div>
     <table border="1" class="dataframe table-fill">
       <thead>
         <tr style="text-align: left;">
           <th></th>
           <th>Местность</th>
-          <th>Коли</th>
+          <th>Количество</th>
         </tr>
       </thead>
       <tbody class="table-hover">
@@ -714,6 +716,102 @@
         </tr>
       </tbody>
     </table>
+    <img src="{% static 'django_application/img/geography_count_all.jpg' %}" class='dynamic25'>
+    <img src="{% static 'django_application/img/pie_geography_all.png' %}" class='softdynamic1'>
+
+
+    <div class="table-title">
+      <h3>Средняя зарплата по местности для профессии Python-разработчик</h3>
+    </div>
+    <table border="1" class="dataframe table-fill">
+      <thead>
+        <tr style="text-align: left;">
+          <th></th>
+          <th>Местность</th>
+          <th>Средняя ЗП</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <th>1</th>
+          <td>Армения</td>
+          <td>477245.612500</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Батуми</td>
+          <td>354491.225000</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Тбилиси</td>
+          <td>313650.783333</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>Астана</td>
+          <td>287338.900000</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>Минск</td>
+          <td>280032.222917</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>Симферополь</td>
+          <td>252500.000000</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>Пенза</td>
+          <td>213333.333333</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>Тверь</td>
+          <td>210000.000000</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>Самара</td>
+          <td>207500.000000</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>Ульяновск</td>
+          <td>161250.000000</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>Кемерово</td>
+          <td>160000.000000</td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>Харьков</td>
+          <td>159333.587500</td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>Новосибирск</td>
+          <td>158893.493519</td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>Воронеж</td>
+          <td>152341.688333</td>
+        </tr>
+        <tr>
+          <th>15</th>
+          <td>Алматы</td>
+          <td>149052.437143</td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="{% static 'django_application/img/geography_vac_salary.png' %}" class='dynamic35'>
+
+
   </div>
 
   <div id="Tab4" class="tabcontent">
